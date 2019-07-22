@@ -1,0 +1,9 @@
+Fonts: Arial, Helvetica, sans-serif
+
+Colors: 
+
+body:             rgb(60, 72, 83)
+title:            rgb(226, 218, 218)
+searchbox:        rgb(231, 231, 231)
+tiles:            #2196F3
+tiles at hover:   rgb(235, 108, 35);
