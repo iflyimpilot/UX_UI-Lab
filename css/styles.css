@@ -1,6 +1,6 @@
-/* * {
+* {
   margin-top: 0;
-} */
+}
 
 body {
   margin-left: 0;
@@ -16,16 +16,25 @@ body {
   height: 25px;
   margin-top: 0;
   padding-top: 0;
+  padding-left: 9px;
 }
+
+span {
+  color: rgb(235, 108, 35)
+}
+
+
 
 ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
+ 
 }
 
 ul li {
   padding: 10px;
+  
 }
 
 header {
@@ -37,6 +46,7 @@ header {
 li {
   padding: 10px;
   color: rgb(226, 218, 218);
+  margin: 0;
 }
 
 ::-webkit-input-placeholder {
@@ -64,8 +74,6 @@ input {
   height: 65vh;
   position: relative;
   top: 240px;
-  width: auto;
-  margin: auto;
 }
 
 .grid-container > div {
@@ -90,6 +98,8 @@ form.searchbox input[type="text"] {
   text-align: center;
 }
 
+
+
 /* -----------------Hover styles----------------- */
 
 li:hover {
@@ -105,7 +115,7 @@ li:hover {
 /*------------------------ Media queries--------------------- */
 
 /* Desktop */
-@media only screen and (min-width: 768px) and (max-width 961px;) {
+@media only screen and (min-width: 961) {
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -119,10 +129,13 @@ li:hover {
     width: 90%;
     margin: auto;
   }
+
+
 }
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
+
   .grid-container {
     display: grid;
     xgrid-template-columns: auto auto auto;
@@ -147,10 +160,17 @@ li:hover {
     font-size: 1em;
   }
 
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+
   ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding: 0;
   }
 
   #title {
@@ -164,6 +184,15 @@ li:hover {
     height: 50px;
     margin-top: 0;
     padding-top: 0;
+  }
+
+  #title-bottom {
+    position: relative;
+    top: 310px;
+    color: rgb(226, 218, 218);
+    display: flex;
+    justify-content: center;
+
   }
 }
 
